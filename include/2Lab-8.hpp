@@ -72,6 +72,12 @@ public:
 		im = c.im;
 		return (*this);
 	}
+	bool operator== (const Complex& c) {
+		if ((real == c.real) && (im == c.im)) {
+			return true;
+		}
+		else return false;
+	}
 	Complex& operator +=  (Complex &c)
 	{
 		real += c.real;
