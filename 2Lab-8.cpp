@@ -18,6 +18,12 @@ public:
 		this->im = im;
 	}
 
+	Complex(const Complex& comp)
+	{
+		real = comp.real;
+		im = comp.im;
+	}
+
 	void print(ostream&)
 	{
 		cout << real << " + i*(" << im << ')' << endl;
@@ -69,6 +75,12 @@ public:
 		real = c.real;
 		im = c.im;
 		return (*this);
+	}
+	bool operator== (const Complex& c) {
+		if ((real == c.real) && (im == c.im)) {
+			return true;
+		}
+		else return false;
 	}
 	Complex& operator +=  (Complex &c)
 	{
