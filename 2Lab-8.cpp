@@ -127,19 +127,10 @@ int main(void)
 {
 	Complex result(0, 0);
 
-	//cout << "   Complex number z = x + i*y" << endl << "x = ";
-	//cin >> real;
-	//cout << "y = ";
-	//cin >> im;
-
 	cout << "z = ";
 	Complex complex_num(13, 7);
 	cout << complex_num;
 
-	//cout << endl << "   '+' Complex number c = x + i*y" << endl << "x = ";
-	//cin >> real;
-	//cout << "y = ";
-	//cin >> im;
 	cout << "c = ";
 	Complex plus(4, 9);
 	cout << plus;
@@ -147,10 +138,6 @@ int main(void)
 	result = complex_num.add(plus);
 	cout << result;
 
-	//cout << endl << "   '-' Complex number c = x + i*y" << endl << "x = ";
-	//cin >> real;
-	//cout << "y = ";
-	//cin >> im;
 	cout << "d = ";
 	Complex minus(3, 16);
 	cout << minus;
@@ -158,14 +145,10 @@ int main(void)
 	result = complex_num.sub(minus);
 	cout << result;
 
-	//cout << endl << "   '*' z*a = x*a + i*(y*a)" << endl << "a = ";
-	//cin >> a;
 	cout << "z*5 = ";
 	result = complex_num.mult(5);
 	cout << result;
 
-	//cout << endl << "   '/' z/a = x/a + i*(y/a)" << endl << "a = ";
-	//cin >> a;
 	cout << "z/3 = ";
 	result = complex_num.div(3);
 	cout << result; 
